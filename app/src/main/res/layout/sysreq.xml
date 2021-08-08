@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bgmain"
+    android:padding="15dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/bgmain"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:textSize="15dp"
+            android:text="Nama Game"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/tv_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:textSize="10dp"
+            android:text="Genre"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+
+        <com.github.florent37.expansionpanel.ExpansionHeader
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:expansion_headerIndicator="@id/headerIndicator1"
+            app:expansion_layout="@id/expansionLayout1"
+            app:expansion_toggleOnClick="true"
+            android:background="#1c2e4a"
+            android:padding="15dp"
+            >
+
+            <TextView
+                android:id="@+id/txtstat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:fontFamily="casual"
+                android:text="Minimum System Requirement"
+                android:textColor="@color/white"/>
+
+            <!-- HEADER -->
+
+
+            <!-- HEADER INDICATOR -->
+            <ImageView
+                android:adjustViewBounds="true"
+                android:id="@+id/headerIndicator1"
+                android:layout_gravity="center_vertical|right"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+        </com.github.florent37.expansionpanel.ExpansionHeader>
+
+        <com.github.florent37.expansionpanel.ExpansionLayout
+            android:id="@+id/expansionLayout1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="#203354"
+            android:padding="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtos1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:fontFamily="casual"
+                    android:text="OS"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/txtpro1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:fontFamily="casual"
+                    android:text="Procecssor"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/txtmemo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:fontFamily="casual"
+                    android:text="Memory"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/txtgrap1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:fontFamily="casual"
+                    android:text="Graphics"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/txtdir1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:fontFamily="casual"
+                    android:text="DirectX"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/txtnet1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:fontFamily="casual"
+                    android:text="Network"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/txtstor1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:fontFamily="casual"
+                    android:text="Storage"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/txtsc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:fontFamily="casual"
+                    android:text="SoundCard"
+                    android:textColor="@color/white"/>
+
+                <!-- CONTENT -->
+            </LinearLayout>
+        </com.github.florent37.expansionpanel.ExpansionLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
+        >
+
+        <com.github.florent37.expansionpanel.ExpansionHeader
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:expansion_headerIndicator="@id/headerIndicator2"
+            app:expansion_layout="@id/expansionLayout2"
+            app:expansion_toggleOnClick="true"
+            android:background="#1c2e4a"
+            android:padding="15dp"
+            >
+
+            <TextView
+                android:id="@+id/txtstat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:fontFamily="casual"
+                android:text="Recommended System Requirement"
+                android:textColor="@color/white"/>
+
+            <!-- HEADER -->
+
+
+            <!-- HEADER INDICATOR -->
+            <ImageView
+                android:adjustViewBounds="true"
+                android:id="@+id/headerIndicator2"
+                android:layout_gravity="center_vertical|right"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+        </com.github.florent37.expansionpanel.ExpansionHeader>
+
+        <com.github.florent37.expansionpanel.ExpansionLayout
+            android:id="@+id/expansionLayout2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="#203354"
+            android:padding="15dp">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtos2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:fontFamily="casual"
+                android:text="OS"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/txtpro2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:fontFamily="casual"
+                android:text="Procecssor"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/txtmemo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:fontFamily="casual"
+                android:text="Memory"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/txtgrap2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:fontFamily="casual"
+                android:text="Graphics"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/txtdir2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:fontFamily="casual"
+                android:text="DirectX"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/txtnet2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:fontFamily="casual"
+                android:text="Network"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/txtstor2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:fontFamily="casual"
+                android:text="Storage"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/txtsc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:fontFamily="casual"
+                android:text="SoundCard"
+                android:textColor="@color/white"/>
+
+            <!-- CONTENT -->
+    </LinearLayout>
+        </com.github.florent37.expansionpanel.ExpansionLayout>
+    </LinearLayout>
+
+</LinearLayout>
